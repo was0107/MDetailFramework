@@ -7,6 +7,7 @@
 //
 
 #import "DetailTipView.h"
+#import "DetailLocalizable.h"
 
 @implementation DetailTipView {
     UIView *_leftLine , *_rightLine;
@@ -23,7 +24,7 @@
         label.textAlignment = NSTextAlignmentCenter;
         label.backgroundColor = [UIColor clearColor];
         self.backgroundColor = [UIColor colorWithRed:241.0f/255.0f green:241.0f/255.0f blue:241.0f/255.0f alpha:1];
-        label.text = @"继续拖动，查看图文详情";
+        label.text = [DetailLocalizable localizStringKey:@"detail_section_default" comment:@"继续拖动，查看图文详情"];
         label.font = [UIFont systemFontOfSize:13.0f];
         [self addSubview:label];
         

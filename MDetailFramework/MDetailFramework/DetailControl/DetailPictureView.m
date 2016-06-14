@@ -8,6 +8,7 @@
 
 #import "DetailPictureView.h"
 #include <objc/runtime.h>
+#import "DetailLocalizable.h"
 
 
 #pragma mark --
@@ -38,7 +39,7 @@
         _rightLabel.font = [UIFont systemFontOfSize:12.0f];
         _rightLabel.numberOfLines = 0;
         _rightLabel.textAlignment = NSTextAlignmentCenter;
-        _rightLabel.text = @"滑动，查看图文详情";
+        _rightLabel.text = [DetailLocalizable localizStringKey:@"detail_picture_default" comment:@"滑动，查看图文详情"];
         _rightLabel.backgroundColor = [UIColor clearColor];
     }
     return _rightLabel;
@@ -48,7 +49,7 @@
     if (!_leftImageView) {
         _leftImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, (self.bounds.size.height - 25) / 2, 22, 22)];
         _leftImageView.backgroundColor = [UIColor clearColor];
-        _leftImageView.image = [UIImage imageNamed:@"detail_left_loading"];
+        _leftImageView.image = [UIImage imageNamed:@"Detail.bundle/images/detail_left_loading"];
     }
     return _leftImageView;
 }
@@ -127,7 +128,7 @@
             }
                 break;
             case DetailPictureViewStateLoading: {
-                _rightLabel.text = @"释放，查看图文详情";
+                _rightLabel.text = [DetailLocalizable localizStringKey:@"detail_picture_release" comment:@"释放，查看图文详情"];
                 [UIView animateWithDuration:0.2f animations:^{
                     [_leftImageView setTransform:CGAffineTransformMakeRotation(M_PI)];
                 }];
@@ -135,7 +136,7 @@
                 
                 break;
             case DetailPictureViewStateNormal:{
-                _rightLabel.text = @"滑动，查看图文详情";
+                _rightLabel.text = [DetailLocalizable localizStringKey:@"detail_picture_default" comment:@"滑动，查看图文详情"];
                 
                 [UIView animateWithDuration:0.2f animations:^{
                     [_leftImageView setTransform:CGAffineTransformIdentity];

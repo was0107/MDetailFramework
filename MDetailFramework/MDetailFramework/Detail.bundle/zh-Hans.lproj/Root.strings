@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  MDetailFramework
+
+  Created by Micker on 16/6/14.
+  Copyright © 2016年 micker. All rights reserved.
+*/
+
+
+"detail_picture_default" = "滑动，查看图文详情";
+"detail_picture_release" = "释放，查看图文详情";
+"detail_pull_default" = "下拉，返回宝贝详情";
+"detail_pull_release" = "释放，返回宝贝详情";
+"detail_section_default" = "继续拖动，查看图文详情";

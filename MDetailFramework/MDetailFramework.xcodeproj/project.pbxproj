@@ -46,6 +46,11 @@
 		6272E2521CBEB7E000D15853 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E24A1CBEB7E000D15853 /* RootTableViewController.m */; };
 		6272E2531CBEB7E000D15853 /* SingleOneSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E24C1CBEB7E000D15853 /* SingleOneSectionTableViewController.m */; };
 		6272E2541CBEB7E000D15853 /* UIImage+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E24E1CBEB7E000D15853 /* UIImage+extend.m */; };
+		6277EEC01D0FB4A900A386A5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6277EEBF1D0FB4A900A386A5 /* Info.plist */; };
+		6277EEC81D0FB64B00A386A5 /* Detail.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6277EEC71D0FB64B00A386A5 /* Detail.bundle */; };
+		6277EEC91D0FB64B00A386A5 /* Detail.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6277EEC71D0FB64B00A386A5 /* Detail.bundle */; };
+		6277EECE1D0FC98800A386A5 /* DetailLocalizable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6277EECC1D0FC98800A386A5 /* DetailLocalizable.h */; };
+		6277EECF1D0FC98800A386A5 /* DetailLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6277EECD1D0FC98800A386A5 /* DetailLocalizable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +74,6 @@
 		6272E2141CBEB6DA00D15853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6272E2161CBEB6DA00D15853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6272E2191CBEB6DA00D15853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6272E21B1CBEB6DA00D15853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6272E2201CBEB6DA00D15853 /* testDetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6272E2241CBEB6DA00D15853 /* testDetailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testDetailTests.m; sourceTree = "<group>"; };
 		6272E2261CBEB6DA00D15853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +98,10 @@
 		6272E24C1CBEB7E000D15853 /* SingleOneSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleOneSectionTableViewController.m; sourceTree = "<group>"; };
 		6272E24D1CBEB7E000D15853 /* UIImage+extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+extend.h"; sourceTree = "<group>"; };
 		6272E24E1CBEB7E000D15853 /* UIImage+extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extend.m"; sourceTree = "<group>"; };
+		6277EEBF1D0FB4A900A386A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6277EEC71D0FB64B00A386A5 /* Detail.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Detail.bundle; sourceTree = "<group>"; };
+		6277EECC1D0FC98800A386A5 /* DetailLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLocalizable.h; sourceTree = "<group>"; };
+		6277EECD1D0FC98800A386A5 /* DetailLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailLocalizable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 				6272E2311CBEB72D00D15853 /* DetailControl */,
 				6272E1F71CBEB6A500D15853 /* MDetailFramework.h */,
 				6272E1F91CBEB6A500D15853 /* Info.plist */,
+				6277EEC71D0FB64B00A386A5 /* Detail.bundle */,
 			);
 			path = MDetailFramework;
 			sourceTree = "<group>";
@@ -174,9 +183,9 @@
 				6272E20D1CBEB6DA00D15853 /* AppDelegate.h */,
 				6272E20E1CBEB6DA00D15853 /* AppDelegate.m */,
 				6272E2131CBEB6DA00D15853 /* Main.storyboard */,
+				6277EEBF1D0FB4A900A386A5 /* Info.plist */,
 				6272E2161CBEB6DA00D15853 /* Assets.xcassets */,
 				6272E2181CBEB6DA00D15853 /* LaunchScreen.storyboard */,
-				6272E21B1CBEB6DA00D15853 /* Info.plist */,
 				6272E20A1CBEB6DA00D15853 /* Supporting Files */,
 			);
 			path = testDetail;
@@ -210,6 +219,8 @@
 				6272E2371CBEB72D00D15853 /* DetailTipView.m */,
 				6272E2381CBEB72D00D15853 /* DetailView.h */,
 				6272E2391CBEB72D00D15853 /* DetailView.m */,
+				6277EECC1D0FC98800A386A5 /* DetailLocalizable.h */,
+				6277EECD1D0FC98800A386A5 /* DetailLocalizable.m */,
 			);
 			path = DetailControl;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 			files = (
 				6272E23E1CBEB72D00D15853 /* DetailTipView.h in Headers */,
 				6272E1F81CBEB6A500D15853 /* MDetailFramework.h in Headers */,
+				6277EECE1D0FC98800A386A5 /* DetailLocalizable.h in Headers */,
 				6272E2401CBEB72D00D15853 /* DetailView.h in Headers */,
 				6272E23A1CBEB72D00D15853 /* DetailPictureView.h in Headers */,
 				6272E23C1CBEB72D00D15853 /* DetailRefreshView.h in Headers */,
@@ -335,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6277EEC81D0FB64B00A386A5 /* Detail.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6277EEC91D0FB64B00A386A5 /* Detail.bundle in Resources */,
+				6277EEC01D0FB4A900A386A5 /* Info.plist in Resources */,
 				6272E21A1CBEB6DA00D15853 /* LaunchScreen.storyboard in Resources */,
 				6272E2171CBEB6DA00D15853 /* Assets.xcassets in Resources */,
 				6272E2151CBEB6DA00D15853 /* Main.storyboard in Resources */,
@@ -382,6 +397,7 @@
 				6272E2411CBEB72D00D15853 /* DetailView.m in Sources */,
 				6272E23F1CBEB72D00D15853 /* DetailTipView.m in Sources */,
 				6272E23D1CBEB72D00D15853 /* DetailRefreshView.m in Sources */,
+				6277EECF1D0FC98800A386A5 /* DetailLocalizable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -606,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -661,6 +679,7 @@
 				6272E1FE1CBEB6A500D15853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6272E2001CBEB6BF00D15853 /* Build configuration list for PBXAggregateTarget "DetailAggregate" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +688,7 @@
 				6272E2021CBEB6BF00D15853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6272E2271CBEB6DA00D15853 /* Build configuration list for PBXNativeTarget "testDetail" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +697,7 @@
 				6272E2291CBEB6DA00D15853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6272E22A1CBEB6DA00D15853 /* Build configuration list for PBXNativeTarget "testDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -685,6 +706,7 @@
 				6272E22C1CBEB6DA00D15853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "DetailRefreshView.h"
 #include <objc/runtime.h>
+#import "DetailLocalizable.h"
 
 #pragma mark --
 #pragma mark DetailRefreshView
@@ -38,7 +39,7 @@
         _bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 35, self.bounds.size.width, 18)];
         _bottomLabel.font = [UIFont systemFontOfSize:12.0f];
         _bottomLabel.textAlignment = NSTextAlignmentCenter;
-        _bottomLabel.text = @"下拉，返回宝贝详情";
+        _bottomLabel.text = [DetailLocalizable localizStringKey:@"detail_pull_default" comment:@"下拉，返回宝贝详情"];
         _bottomLabel.backgroundColor = [UIColor clearColor];   
     }
     return _bottomLabel;
@@ -48,7 +49,7 @@
     if (!_topImageView) {
         _topImageView = [[UIImageView alloc] initWithFrame:CGRectMake((self.bounds.size.width - 25) / 2, 9, 22, 22)];
         _topImageView.backgroundColor = [UIColor clearColor];
-        _topImageView.image = [UIImage imageNamed:@"detail_down_loading"];
+        _topImageView.image = [UIImage imageNamed:@"Detail.bundle/images/detail_down_loading"];
     }
     return _topImageView;
 }
@@ -127,7 +128,7 @@
             }
                 break;
             case DetailRefreshStateLoading: {
-                _bottomLabel.text = @"释放，返回宝贝详情";
+                _bottomLabel.text = [DetailLocalizable localizStringKey:@"detail_pull_release" comment:@"释放，返回宝贝详情"];
                 [UIView animateWithDuration:0.2f animations:^{
                     [blockSelf.topImageView setTransform:CGAffineTransformMakeRotation(M_PI)];
                 }];
@@ -135,7 +136,7 @@
                 
                 break;
             case DetailRefreshStateNormal:{
-                _bottomLabel.text = @"下拉，返回宝贝详情";
+                _bottomLabel.text = [DetailLocalizable localizStringKey:@"detail_pull_default" comment:@"下拉，返回宝贝详情"];
                 [UIView animateWithDuration:0.2f animations:^{
                     [blockSelf.topImageView setTransform:CGAffineTransformIdentity];
                 }];

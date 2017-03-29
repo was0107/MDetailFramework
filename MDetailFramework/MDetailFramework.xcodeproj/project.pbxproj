@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		626ED5DA1E8BAEF00056B833 /* MFullScreenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272E22E1CBEB70000D15853 /* MFullScreenFramework.framework */; };
 		6272E1F81CBEB6A500D15853 /* MDetailFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6272E1F71CBEB6A500D15853 /* MDetailFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6272E20C1CBEB6DA00D15853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E20B1CBEB6DA00D15853 /* main.m */; };
 		6272E20F1CBEB6DA00D15853 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E20E1CBEB6DA00D15853 /* AppDelegate.m */; };
@@ -30,7 +31,6 @@
 		6272E2251CBEB6DA00D15853 /* testDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E2241CBEB6DA00D15853 /* testDetailTests.m */; };
 		6272E22D1CBEB6E000D15853 /* MDetailFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272E1F41CBEB6A500D15853 /* MDetailFramework.framework */; };
 		6272E22F1CBEB70000D15853 /* MFullScreenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272E22E1CBEB70000D15853 /* MFullScreenFramework.framework */; };
-		6272E2301CBEB70400D15853 /* MFullScreenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272E22E1CBEB70000D15853 /* MFullScreenFramework.framework */; };
 		6272E23A1CBEB72D00D15853 /* DetailPictureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6272E2321CBEB72D00D15853 /* DetailPictureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6272E23B1CBEB72D00D15853 /* DetailPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6272E2331CBEB72D00D15853 /* DetailPictureView.m */; };
 		6272E23C1CBEB72D00D15853 /* DetailRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6272E2341CBEB72D00D15853 /* DetailRefreshView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		626ED5D71E8BA3250056B833 /* MFullScreenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MFullScreenFramework.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Dallas-bfvukggundgcexadogozzcxgjwze/Build/Products/Debug-iphonesimulator/MFullScreenFramework.framework"; sourceTree = "<group>"; };
 		6272E1F41CBEB6A500D15853 /* MDetailFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDetailFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6272E1F71CBEB6A500D15853 /* MDetailFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDetailFramework.h; sourceTree = "<group>"; };
 		6272E1F91CBEB6A500D15853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,8 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626ED5DA1E8BAEF00056B833 /* MFullScreenFramework.framework in Frameworks */,
 				6272E2421CBEB76F00D15853 /* MDetailFramework.framework in Frameworks */,
-				6272E2301CBEB70400D15853 /* MFullScreenFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		626ED5D61E8BA3250056B833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				626ED5D71E8BA3250056B833 /* MFullScreenFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6272E1EA1CBEB6A500D15853 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +150,7 @@
 				6272E2091CBEB6DA00D15853 /* testDetail */,
 				6272E2231CBEB6DA00D15853 /* testDetailTests */,
 				6272E1F51CBEB6A500D15853 /* Products */,
+				626ED5D61E8BA3250056B833 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

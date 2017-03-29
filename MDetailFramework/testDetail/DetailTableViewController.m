@@ -13,9 +13,9 @@
 
 static NSString *titles[] = {@"图文详情",@"商品评论",@"店铺推荐"};
 static NSString *urls[] = {
-    @"http://m.b5m.com/item.html?tid=2614676&mps=____&type=content",
-    @"http://m.b5m.com/item.html?tid=2614676&mps=____&type=comment",
-    @"http://m.baidu.com"};
+    @"http://micker.cn/2016/04/14/%E6%B7%98%E5%AE%9D%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E6%8E%A7%E4%BB%B6/",
+    @"http://micker.cn/2016/04/14/%E5%85%A8%E5%B1%8F%E6%B5%8F%E8%A7%88%E6%8E%A7%E4%BB%B6/",
+    @"http://micker.cn"};
 
 @interface DetailTableViewController () <DetailViewSectionDelegate, UIScrollPageControlViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) DetailView *detailView;
@@ -31,8 +31,8 @@ static NSString *urls[] = {
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.detailView];
     self.view.backgroundColor = [UIColor lightGrayColor];
-    [self.tableView reloadData];
     [self.detailView reloadData];
+    [self.tableView reloadData];
 }
 
 - (void) dealloc {

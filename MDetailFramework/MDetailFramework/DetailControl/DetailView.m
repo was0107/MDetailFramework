@@ -258,6 +258,7 @@ static CGFloat tipHeight    = 44.0f;
         _topScrollPageView = [[UIScrollPageControlView alloc] initWithFrame:CGRectMake(0, -_topScrollViewTopInset, width, _topScrollViewTopInset)];
         _topScrollPageView.scrollView.frame = CGRectMake(0, 10, width, _topScrollViewTopInset);
         _topScrollPageView.layer.masksToBounds = NO;
+        [_topScrollPageView enablePanGesture:NO];
     }
     return _topScrollPageView;
 }
@@ -270,6 +271,11 @@ static CGFloat tipHeight    = 44.0f;
             [blockSelf hideFullScreenOnView:nil];
             [blockSelf addDetailPictureViewHandler];
         }];
+        _fullScreencontrol.onPanFinshed = ^(UIView *view) {
+            [blockSelf hideFullScreenOnView:view];
+        };
+        [_fullScreencontrol.screenPageView enablePanGesture:NO];
+
         _fullScreencontrol.screenPageView.scrollView.pictureView.rightLabel.textColor = [UIColor whiteColor];
         _fullScreencontrol.screenPageView.scrollView.pictureView.leftImageView.image = [UIImage imageNamed:@"detail_left_loading_white"];
     }
@@ -373,6 +379,7 @@ static CGFloat tipHeight    = 44.0f;
     }
     
 }
+
 
 #pragma mark --
 #pragma mark Action

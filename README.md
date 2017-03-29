@@ -2,6 +2,10 @@
 ##前言
 [MDetailFramework](https://github.com/was0107/MDetailFramework),为实现淘宝中的商品详情页面中， 商品的基本信息、图文详情、评论、商家推荐的效果；
 
+##效果图展示
+为更好的展示效果，请耐心等待<br>
+<img src="https://raw.githubusercontent.com/was0107/MDetailFramework/master/images/detail.gif" width="50%">
+
 ##简介
 * 1、此包提供商品详情的展示，支持全屏、导航2种模式；
 * 2、支持图片左滑到一定距离时，侧滑展示图文详情、评论，其中图片详情、评论可通过Delegate配置；
@@ -132,6 +136,3 @@
 
 ```
 
-##效果图展示
-为更好的展示效果，请耐心等待
-<img src="https://raw.githubusercontent.com/was0107/MDetailFramework/master/images/detail.gif" width="50%">
